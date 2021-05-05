@@ -1,4 +1,4 @@
-package com.apcc.xview
+package com.apcc.xview.test
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

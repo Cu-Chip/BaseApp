@@ -1,2 +1,3 @@
+include ':app:XView'
 include ':app'
-rootProject.name = "XView"
+rootProject.name = "XView-Test"
