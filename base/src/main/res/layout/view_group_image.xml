@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/imageMedium"
+    android:background="@drawable/bg_border"
+    android:padding="@dimen/margin_tiny">
+
+    <com.apcc.view.XButton
+        android:id="@+id/apccAddImage"
+        android:layout_width="@dimen/barHeight"
+        android:layout_height="@dimen/barHeight"
+        android:padding="@dimen/margin_tiny"
+        android:background="@drawable/btn_add"
+        app:buttonType="icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccAddImage"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc1"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc2"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc3"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc4"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc5"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc6"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc7"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc9"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc8"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc10"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc9"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc11"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc10"
+        app:layout_constraintEnd_toStartOf="@+id/apccIc12"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XIcon
+        android:id="@+id/apccIc12"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toEndOf="@+id/apccIc11"
+        app:layout_constraintEnd_toStartOf="@+id/apccMore"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.apcc.view.XTextView
+        android:id="@+id/apccMore"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_img"
+        android:gravity="center"
+            android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/apccIc12"
+        app:textType="big_important" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

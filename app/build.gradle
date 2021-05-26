@@ -4,26 +4,17 @@ plugins {
 }
 
 android {
-    signingConfigs {
-        RunRelease {
-            storeFile file('D:\\androidProject\\XView\\note\\releaseKey.jks')
-            storePassword 'AP@12345678'
-            keyAlias 'APCC'
-            keyPassword 'AP@123456789'
-        }
-    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.apcc.xview.test"
+        applicationId "com.apcc.baseapp"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        signingConfig signingConfigs.RunRelease
     }
 
     buildTypes {
@@ -43,11 +34,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(path: ':XView')
+    implementation project(path: ':base')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.3.2'
-    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.core:core-ktx:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     testImplementation 'junit:junit:4.+'

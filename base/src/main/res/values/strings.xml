@@ -1,0 +1,13 @@
+<resources>
+    <string name="lbl_gender">Gender</string>
+    <string name="gender_unisex">Unisex</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="lbl_repeat">Repeat</string>
+    <string name="lbl_none">None</string>
+    <string name="lbl_daily">Daily</string>
+    <string name="lbl_weekly">Weekly</string>
+    <string name="lbl_monthly">Monthly</string>
+    <string name="lbl_yearly">Yearly</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/apccParent"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/btn_none"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.apcc.view.XTextView
+        android:id="@+id/apccLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:textType="small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.apcc.view.XEditText
+        android:id="@+id/apccInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_tiny"
+        android:paddingEnd="@dimen/imageSmall"
+        android:minHeight="@dimen/inputFieldHeight"
+        android:background="@drawable/bg_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apccLabel"/>
+
+    <com.apcc.view.XButton
+        android:id="@+id/apccRight"
+        android:layout_width="@dimen/imageTiny"
+        android:layout_height="@dimen/imageTiny"
+        android:background="@drawable/ic_remove_circle"
+        app:buttonType="icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/apccInput"
+        android:layout_marginEnd="@dimen/rightImageMargin"
+        android:focusable="false"
+        android:layout_marginTop="@dimen/rightImageMargin"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.apcc.view.XTextView
+        android:id="@+id/apccLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_repeat"
+        app:textType="small"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/apccParent"
+        android:background="@drawable/bg_input">
+
+        <com.apcc.view.XRadioButton
+            android:id="@+id/apccNone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/lbl_none"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.apcc.view.XRadioButton
+            android:id="@+id/apccDaily"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/lbl_daily"
+            app:layout_constraintTop_toBottomOf="@+id/apccNone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/apccWeekly" />
+
+        <com.apcc.view.XRadioButton
+            android:id="@+id/apccWeekly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/lbl_weekly"
+            app:layout_constraintTop_toBottomOf="@+id/apccNone"
+            app:layout_constraintStart_toEndOf="@+id/apccDaily"
+            app:layout_constraintEnd_toEndOf="parent"  />
+
+        <com.apcc.view.XRadioButton
+            android:id="@+id/apccMonthly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/lbl_monthly"
+            app:layout_constraintTop_toBottomOf="@+id/apccDaily"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/apccYearly"/>
+
+        <com.apcc.view.XRadioButton
+            android:id="@+id/apccYearly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:text="@string/lbl_yearly"
+            app:layout_constraintStart_toEndOf="@+id/apccMonthly"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apccDaily"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
